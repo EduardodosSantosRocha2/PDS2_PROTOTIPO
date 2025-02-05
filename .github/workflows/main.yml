@@ -33,4 +33,4 @@ jobs:
       - name: Executar pytest
         env:
           DATABASE_URL: postgresql://postgres:admin@localhost:5432/database
-        run: pytest teste.py
+        run: pytest ./BACKEND/teste.py
