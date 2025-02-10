@@ -12,8 +12,8 @@ jobs:
       postgres:
         image: postgres:13
         env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: cuidado123
+          POSTGRES_USER: ${{ secrets.USER}}
+          POSTGRES_PASSWORD: ${{ secrets.SENHA}}
           POSTGRES_DB: database
         ports:
           - 5432:5432
