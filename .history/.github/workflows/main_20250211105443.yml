@@ -33,7 +33,7 @@ jobs:
           python -m venv .venv
           . .venv/bin/activate
           python -m pip install --upgrade pip
-          pip install -r ./BACKEND/requirements.txt
+          pip install -r requirements.txt
 
       - name: Criar arquivo .env
         run: |
@@ -44,4 +44,4 @@ jobs:
       - name: Run tests
         run: |
           source .venv/bin/activate
-          python -m pytest ./BACKEND/teste.py
+          python -m pytest teste.py
