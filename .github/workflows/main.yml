@@ -46,7 +46,7 @@ jobs:
         run: |
           echo "DATABASE_URL=${DATABASE_URL//:${{ secrets.SENHA }}/:*****}"
         env:
-          DATABASE_URL: "postgresql://${{ secrets.USER }}:${{ secrets.SENHA }}@localhost:5432/database"
+          DATABASE_URL: "postgresql://postegres:cuidado123@localhost:5432/database"
 
       - name: Testar conexão com PostgreSQL
         run: |
